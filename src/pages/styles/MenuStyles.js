@@ -7,7 +7,7 @@ import {
   setColor,
 } from "../../components/GlobalStyles/helper";
 import Card from "../../components/UI/Card";
-import design from "../../assets/design.png";
+
 
 export const Wrapper = styled.section`
   padding: 8.4rem 4rem;
@@ -64,14 +64,6 @@ export const MenuImg = styled(Card)`
   }
 `;
 
-export const MenuCard = styled.div`
-  width: 100%;
-  max-width: 600px;
-  ${setFlex({ x: "space-between", y: "center", d: "column" })};
-  margin: 0 auto;
-  background: url(${design}) no-repeat center/cover;
-`;
 
-export const MenuItemWrapper = styled.div`
-  ${setFlex({ x: "space-between", y: "center", d: "column" })};
-`;
+
+

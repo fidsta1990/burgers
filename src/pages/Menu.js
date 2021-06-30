@@ -1,14 +1,12 @@
-import React , {useEffect} from "react";
+import React, { useEffect } from "react";
 import {
   Wrapper,
   Container,
   MenuImg,
-  MenuCard,
   Disclaimer,
-  MenuItemWrapper,
 } from "./styles/MenuStyles";
 import menuImg from "../assets/mainOne.png";
-// import MenuItem from "./MenuItem";
+import Meals from "../components/Meals/Meals";
 import Title from "../components/UI/Title";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,10 +22,10 @@ const Menu = () => {
 
   return (
     <Wrapper
-    data-aos="fade-down"
-    data-aos-offset="200"
-    data-aos-delay="800"
-    data-aos-duration="1000"
+      data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-delay="800"
+      data-aos-duration="1000"
     >
       <Title>Spicy's Menu</Title>
       <Disclaimer>
@@ -38,9 +36,7 @@ const Menu = () => {
         <MenuImg>
           <img src={menuImg} alt="menu" />
         </MenuImg>
-        <MenuCard>
-          <MenuItemWrapper></MenuItemWrapper>
-        </MenuCard>
+          <Meals />
       </Container>
     </Wrapper>
   );

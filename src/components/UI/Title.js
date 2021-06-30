@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { setColor, sizes } from "../GlobalStyles/helper";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Title = (props) => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 500, once: true, easing: "ease-in-out" });
-  // }, []);
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true, easing: "ease-in-out" });
+  }, []);
 
   return (
     <Wrapper
-      // data-aos="fade-down"
-      // data-aos-offset="200"
-      // data-aos-duration="500"
+      data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-duration="500"
     >
       <Titles>{props.children}</Titles>
     </Wrapper>
