@@ -9,7 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { CartBtn, DesktopCartBtn } from "./CartBtn";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [toggleNav, setToggleNav] = useState(false);
 
   const toggleHandler = () => setToggleNav(!toggleNav);
@@ -49,7 +49,7 @@ const Navbar = () => {
             </Link>
           </Logo>
           {/* basket */}
-          <CartBtn className="desktop-cart" />
+          <CartBtn className="desktop-cart" onClick={props.onShowCart} />
           {/* bar */}
           <Bar onClick={toggleHandler}>
             {toggleNav ? (
@@ -77,7 +77,7 @@ const Navbar = () => {
             })}
           </Menu>
         </div>
-        <DesktopCartBtn  />
+        <DesktopCartBtn onClick={props.onShowCart} />
       </Center>
     </Nav>
   );

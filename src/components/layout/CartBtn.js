@@ -1,18 +1,18 @@
 import React from "react";
 import { Basket, DesktopBasket, Badge } from "./CartBtnStyles";
 import { GiShoppingCart } from "react-icons/gi";
-export const CartBtn = () => {
+export const CartBtn = (props) => {
   return (
-    <Basket>
+    <Basket onClick={props.onClick}>
       <GiShoppingCart />
       <Badge>0</Badge>
     </Basket>
   );
 };
 
-export const DesktopCartBtn = () => {
+export const DesktopCartBtn = (props) => {
   return (
-    <DesktopBasket>
+    <DesktopBasket onClick={props.onClick}>
       <GiShoppingCart />
       <Badge>0</Badge>
     </DesktopBasket>
