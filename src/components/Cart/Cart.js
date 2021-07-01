@@ -7,6 +7,7 @@ import {
   Actions,
   CartItemBtn,
 } from "./CartStyles";
+import Modal from '../UI/Modal'
 const Cart = (props) => {
   const cartItems = (
     <ul>
@@ -17,17 +18,17 @@ const Cart = (props) => {
   );
 
   return (
-    <div>
+    <Modal>
       {cartItems}
       <div className="total">
-        <span>Total Amount</span>
-        <span>34.22</span>
+        <span className="totalAmount">Total Amount :</span>
+        <span className="price">34.22</span>
       </div>
       <Actions>
-        <CartItemBtn>Close</CartItemBtn>
         <CartItemBtn>Order</CartItemBtn>
+        <CartItemBtn>Close</CartItemBtn>
       </Actions>
-    </div>
+    </Modal>
   );
 };
 

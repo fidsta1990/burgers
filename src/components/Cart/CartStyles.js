@@ -36,30 +36,38 @@ export const Amount = styled.p`
 `;
 export const Actions = styled.p`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 
-  @media (min-width: ${sizes.m}) {
     flex-direction: row;
-  }
+  /* @media (min-width: ${sizes.m}) {
+  } */
 `;
 
 export const CartItemBtn = styled.button`
   font: inherit;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 2.4rem;
   color: #8a2b06;
   border: 1px solid #8a2b06;
-  width: 3rem;
+  width: 10rem;
   text-align: center;
   border-radius: 6px;
   background-color: transparent;
   cursor: pointer;
-  margin-left: 1rem;
-  margin: 0.25rem;
+  margin-left: 1.6rem;
+  margin: 0.5rem;
 
   &:hover,
   &:active {
     background-color: #8a2b06;
     color: white;
+  }
+
+  &:nth-of-type(2){
+    margin-left: 2rem;
+  }
+
+  @media (max-width: ${sizes.m}){
+    font-size: 1.6rem;
   }
 `;
