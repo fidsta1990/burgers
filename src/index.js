@@ -1,5 +1,13 @@
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import App from './App';
+import CartProvider from "./store/CartProvider";
+import App from "./App";
 
-ReactDOM.render(<Router><App /></Router>, document.getElementById('root'));
+ReactDOM.render(
+  <CartProvider>
+    <Router>
+      <App />
+    </Router>
+  </CartProvider>,
+  document.getElementById("root")
+);
