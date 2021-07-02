@@ -1,17 +1,15 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { setColor, sizes } from "../GlobalStyles/helper";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const SubTitle = (props) => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 500, once: true, delay: 200, easing: "ease-in-out" });
-  // }, []);
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true, delay: 200, easing: "ease-in-out" });
+  }, []);
 
   return (
-    <Wrapper
-    //  data-aos="fade-down"
-    >
+    <Wrapper data-aos="fade-down">
       <Sub>{props.children}</Sub>
     </Wrapper>
   );

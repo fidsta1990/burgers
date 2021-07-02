@@ -8,7 +8,6 @@ import {
 } from "../../components/GlobalStyles/helper";
 import Card from "../../components/UI/Card";
 
-
 export const Wrapper = styled.section`
   padding: 8.4rem 4rem;
   ${setFlex({ x: "center", y: "center", d: "column" })};
@@ -56,6 +55,11 @@ export const MenuImg = styled(Card)`
   img {
     ${shadows.dark};
   }
+  @media (max-width: ${sizes.xl}) {
+    margin-bottom: 2.4rem;
+    display: flex;
+    order: 2;
+  }
   @media (max-width: ${sizes.m}) {
     margin-bottom: 2.4rem;
   }
@@ -63,7 +67,3 @@ export const MenuImg = styled(Card)`
     min-height: 60vh;
   }
 `;
-
-
-
-
