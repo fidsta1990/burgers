@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Item,
-  Summary,
-  Price,
-  Amount,
-  Actions,
-  CartItemBtn,
-} from "./CartStyles";
+import { Actions, CartItemBtn } from "./CartStyles";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import { useCartContext } from "../../store/CartProvider";
