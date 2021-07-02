@@ -18,6 +18,8 @@ export const Wrapper = styled.div`
   left: 5%;
   width: 100%;
   max-width: 340px;
+  height: 600px;
+  overflow: auto;
   background: ${setColor.mainWhite};
   padding: 1.6rem;
   border-radius: 14px;

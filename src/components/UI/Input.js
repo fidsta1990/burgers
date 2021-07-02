@@ -1,15 +1,15 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 import { setColor, transition, setFlex } from "../GlobalStyles/helper";
 
-const Input = (props) => {
+const Input = forwardRef((props, ref) => {
   return (
     <Wrapper>
       <Label htmlFor={props.input.id}>{props.label}</Label>
-      <Field {...props.input} />
+      <Field {...props.input} ref={ref} />
     </Wrapper>
   );
-};
+});
 
 const Wrapper = styled.div`
   ${setFlex({ x: "center", y: "center", d: "row" })};
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
 const Label = styled.label`
   font-weight: bold;
-  margin-right: .8rem;
+  margin-right: 0.8rem;
 `;
 
 const Field = styled.input`
@@ -26,7 +26,7 @@ const Field = styled.input`
   border-radius: 5px;
   border: 1px solid #ccc;
   font: inherit;
-  padding: .8rem;
+  padding: 0.8rem;
   padding-left: 0.5rem;
   ${transition};
 

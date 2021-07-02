@@ -8,11 +8,26 @@ import {
   CartItemBtn,
 } from "./CartStyles";
 import Modal from "../UI/Modal";
+import CartItem from "./CartItem";
+import { useCartContext } from "../../store/CartProvider";
 const Cart = (props) => {
+  const { items, totalAmount } = useCartContext();
+
+  const totalValue = `$${totalAmount.toFixed(2)}`;
+  const hasItems = items.length > 0;
+
+  const cartItemRemoveHandler = (id) => {};
+  const cartItemAddHandler = (item) => {};
+
   const cartItems = (
     <ul>
-      {[{ id: "c1", name: "Sushi", amount: 2, price: 12.99 }].map((item) => (
-        <li key={item.id}>{item.name}</li>
+      {items.map((item) => (
+        <CartItem
+          key={item.id}
+          {...item}
+          onRemove={cartItemRemoveHandler.bind(null, item.id)}
+          onAdd={cartItemAddHandler.bind(null, item)}
+        />
       ))}
     </ul>
   );
@@ -22,10 +37,10 @@ const Cart = (props) => {
       {cartItems}
       <div className="total">
         <span className="totalAmount">Total Amount :</span>
-        <span className="price">34.22</span>
+        <span className="price">{totalValue}</span>
       </div>
       <Actions>
-        <CartItemBtn>Order</CartItemBtn>
+        {hasItems && <CartItemBtn>Order</CartItemBtn>}
         <CartItemBtn onClick={props.onHideCart}>Close</CartItemBtn>
       </Actions>
     </Modal>
