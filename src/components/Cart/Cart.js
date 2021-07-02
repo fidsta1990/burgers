@@ -11,13 +11,16 @@ import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import { useCartContext } from "../../store/CartProvider";
 const Cart = (props) => {
-  const { items, totalAmount } = useCartContext();
+  const { items, totalAmount, addItem } = useCartContext();
 
   const totalValue = `$${totalAmount.toFixed(2)}`;
   const hasItems = items.length > 0;
 
   const cartItemRemoveHandler = (id) => {};
-  const cartItemAddHandler = (item) => {};
+  const cartItemAddHandler = (item) => {
+    //very important to set amount to add 1
+    addItem({ ...item, amount: 1 });
+  };
 
   const cartItems = (
     <ul>
