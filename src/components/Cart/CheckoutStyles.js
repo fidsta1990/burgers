@@ -1,30 +1,48 @@
 import styled from "styled-components";
-import { setFlex } from "../GlobalStyles/helper";
+import { setColor, setFlex } from "../GlobalStyles/helper";
 
 export const CheckoutForm = styled.form`
-  margin: 1.6rem 0;
-  height: 19rem;
+  margin: 1.6rem auto;
+  height: 40rem;
   overflow: auto;
+
+  h2 {
+    text-align: center;
+    color: ${setColor.danger};
+    text-shadow: 0 2px 2px ${setColor.mainDark};
+    margin: 2.4rem 0;
+    padding-bottom: 1.6rem;
+  }
 `;
 
-export const ChecoutControl = styled.div`
+export const CheckoutControl = styled.div`
   margin-bottom: 1rem;
+
+  p {
+    color: ${setColor.mainDark};
+  }
+
+  &:nth-of-type(5) {
+    padding-bottom: 3.2rem;
+  }
 `;
-export const ChecoutLabel = styled.label`
-  font-weight: bold;
+export const CheckoutLabel = styled.label`
+  font-weight: 350;
   margin-bottom: 0.5rem;
   display: block;
+  font-size: 2.4rem;
 
   &.invalid {
     color: #ca3e51;
   }
 `;
-export const ChecoutInput = styled.input`
+export const CheckoutInput = styled.input`
   font: inherit;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 24rem;
-  max-width: 100%;
+  width: 100%;
+  max-width: 30rem;
+  font-size: 1.6rem;
 
   &.invalid {
     border-color: #aa0b20;
@@ -34,31 +52,34 @@ export const ChecoutInput = styled.input`
 export const CheckoutActions = styled.div`
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
+  margin: 2.4rem;
 `;
 
 export const CheckoutBtn = styled.button`
   font: inherit;
-  color: #5a1a01;
+  font-size: 1.6rem;
+  color: ${setColor.danger};
+  opacity: 0.8;
   cursor: pointer;
   background-color: transparent;
   border: none;
   border-radius: 25px;
   padding: 1rem 2.4rem;
 
-  &.submit:hover {
-    border: 1px solid #5a1a01;
-    background-color: #5a1a01;
+  /* &.submit:hover {
+    border: 1px solid ${setColor.mainWhite};
+    background-color: ${setColor.mainDark};
     color: white;
   }
 
   &.submit:hover,
   &.submit:active {
     background-color: #7a2706;
-  }
+  } */
 
   &:hover,
   &:active {
-    background-color: #ffe6dc;
+    background-color: ${setColor.mainDark};
+    color: white;
   }
 `;

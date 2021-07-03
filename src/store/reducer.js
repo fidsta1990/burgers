@@ -55,6 +55,10 @@ const reducer = (state, action) => {
     };
   }
 
+  if (action.type === "CLEAR") {
+    return { ...state, items: [] };
+  }
+
   return state;
 };
 

@@ -71,3 +71,12 @@ export const CartItemBtn = styled.button`
     font-size: 1.6rem;
   }
 `;
+
+export const SubmittingStatusWrapper = styled.section`
+  min-height: 70vh;
+  ${setFlex};
+`;
+export const SubmittingStatusText = styled.h2`
+  color: ${setColor.danger};
+  text-shadow: 0 2px 2px ${setColor.mainDark};
+`;
