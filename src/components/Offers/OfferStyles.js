@@ -4,8 +4,8 @@ import { Titles } from "../UI/Title";
 
 export const Wrapper = styled.section`
   padding-top: 4rem;
-  padding-bottom: 10rem;
-  min-height: 80vh;
+  padding-bottom: 6rem;
+  min-height: 60vh;
   ${setFlex({ x: "space-evenly", y: "center", d: "column" })};
   width: 100%;
   max-width: ${sizes.xl};
