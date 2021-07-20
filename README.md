@@ -20,19 +20,17 @@ Site is hosted on Netlify.
 
 Database is setup on Firebase.
 
-![Screenshot 2021-07-20 at 17 40 00](https://user-images.githubusercontent.com/54501214/126362886-0f0c9d9d-0dd6-4503-a3e8-86fbf1cd695e.png)
+![Screenshot 2021-07-20 at 17 44 33](https://user-images.githubusercontent.com/54501214/126367331-da887ca1-933e-4451-8046-87a0b55dd8fa.png)
 
+![Screenshot 2021-07-20 at 18 16 27](https://user-images.githubusercontent.com/54501214/126367495-e86e50bd-eb98-4124-a775-a3a20bc1cdc8.png)
 
-![Screenshot 2021-07-20 at 17 40 19](https://user-images.githubusercontent.com/54501214/126363003-8a03f65b-d8c6-40e6-b669-018206a9bb0e.png)
+![Screenshot 2021-07-20 at 17 44 49](https://user-images.githubusercontent.com/54501214/126367531-c84d7c1b-7e10-4900-bf2c-72b68cf3e99d.png)
 
+![Screenshot 2021-07-20 at 18 16 42](https://user-images.githubusercontent.com/54501214/126367544-8ee86940-3f77-41f5-b7b9-4d15138debc9.png)
 
-![Screenshot 2021-07-20 at 17 40 35](https://user-images.githubusercontent.com/54501214/126362975-7249ee81-7a95-401e-ba3e-ef56e13e9d96.png)
+![Screenshot 2021-07-20 at 17 41 18](https://user-images.githubusercontent.com/54501214/126367562-939fea32-668e-45e0-a06e-8cdc470acf06.png)
 
-![Screenshot 2021-07-20 at 17 40 53](https://user-images.githubusercontent.com/54501214/126363067-a2299563-c723-4ef0-9322-8ed0744ff34f.png)
-
-
-![Screenshot 2021-07-20 at 17 42 20](https://user-images.githubusercontent.com/54501214/126363088-e66ec301-2c88-4dc6-a566-cdb19fa37a74.png)
-
+![Screenshot 2021-07-20 at 17 42 20](https://user-images.githubusercontent.com/54501214/126367568-0922b4c3-f4ec-4cdf-9ea0-63b59ede4dde.png)
 
 
 Flat Icons for logo:
