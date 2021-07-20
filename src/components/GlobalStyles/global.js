@@ -76,6 +76,7 @@ img{
   display: block;
   object-fit: cover;
 }
+
 @media (max-width: ${sizes.m}){
   
   h1{

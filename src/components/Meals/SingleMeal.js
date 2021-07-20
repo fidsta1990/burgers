@@ -20,8 +20,10 @@ const SingleMeal = ({ id: mainID, name, price, img }) => {
     <Wrapper>
       <InfoWrapper>
         <img src={img} alt={name} />
-        <h5>{name}</h5>
-        <p>{pricing}</p>
+        <div className="item-info">
+          <h5>{name}</h5>
+          <p>{pricing}</p>
+        </div>
         <MealItemForm onAddToCart={addToCartHandler} />
       </InfoWrapper>
       

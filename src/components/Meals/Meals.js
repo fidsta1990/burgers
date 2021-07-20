@@ -1,7 +1,7 @@
 import React from "react";
 import AvailableMeals from "./AvailableMeals";
 import styled from "styled-components";
-import { setFlex, sizes } from "../GlobalStyles/helper";
+import { sizes } from "../GlobalStyles/helper";
 import design from "../../assets/design.png";
 
 const Meals = () => {

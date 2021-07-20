@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Global from "./components/GlobalStyles/global";
 import { Home, About, Menu, Contact, Error } from "./pages/";
 import Cart from "./components//Cart/Cart";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -14,6 +15,9 @@ function App() {
   const hideCartHandler = () => {
     setShowCart(false);
   };
+
+  const location = useLocation();
+  const checkLocation = location.pathname !== "/contact";
 
   return (
     <Fragment>
@@ -29,6 +33,7 @@ function App() {
           <Route path="*" component={Error} />
         </Switch>
       </main>
+      {checkLocation ? <Footer /> : ""}
     </Fragment>
   );
 }

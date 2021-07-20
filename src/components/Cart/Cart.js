@@ -35,7 +35,7 @@ const Cart = (props) => {
   const submitOrderHandler = async (userData) => {
     setisSubmitting(true);
     const response = await fetch(
-      "https://spiced-burger-default-rtdb.firebaseio.com/orders.json",
+      `${process.env.REACT_APP_FIREBASE_ORDERS}`,
       {
         method: "POST",
         body: JSON.stringify({

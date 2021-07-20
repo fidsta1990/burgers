@@ -10,6 +10,10 @@ export const Wrapper = styled.li`
     width: 100px;
   }
 
+  .item-info {
+    display: flex;
+  }
+
   h5 {
     color: ${setColor.mainDark};
     opacity: 0.9;
@@ -17,6 +21,23 @@ export const Wrapper = styled.li`
 
   p {
     color: ${setColor.danger};
+  }
+
+  @media (max-width: ${sizes.xss}) {
+    img {
+      width: 80px;
+    }
+
+    .item-info {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &:nth-of-type(3) {
+      h5 {
+        font-size: 0.7rem;
+      }
+    }
   }
 `;
 

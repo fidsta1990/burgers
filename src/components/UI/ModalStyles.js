@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
   left: 5%;
   width: 100%;
   max-width: 340px;
-  height: 600px;
+  height: 500px;
   overflow: auto;
   background: ${setColor.mainWhite};
   padding: 1.6rem;
@@ -39,10 +39,18 @@ export const Wrapper = styled.div`
     filter: brightness(86%);
   }
 
-  @media (max-width: 799px) {
-    left: calc(50% - 20rem);
+  @media (max-width: ${sizes.s}) {
+    left: calc(54% - 18rem);
     width: 100%;
-    max-width: 400px;
+    max-width: 330px;
+    height: 400px;
+    height: 500px;
+  }
+
+  @media (min-width: 578px) {
+    left: calc(44% - 20rem);
+    width: 100%;
+    max-width: 500px;
   }
 
   @media (min-width: ${sizes.m}) {

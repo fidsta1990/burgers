@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { setColor, setFlex } from "../GlobalStyles/helper";
+import { setColor } from "../GlobalStyles/helper";
 
 export const CheckoutForm = styled.form`
   margin: 1.6rem auto;
@@ -19,7 +19,7 @@ export const CheckoutControl = styled.div`
   margin-bottom: 1rem;
 
   p {
-    color: ${setColor.mainDark};
+    color: ${setColor.danger};
   }
 
   &:nth-of-type(5) {

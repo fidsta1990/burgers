@@ -73,28 +73,28 @@ const Checkout = (props) => {
       <h2>Checkout</h2>
       <CheckoutControl>
         <CheckoutLabel htmlFor="name">Your Name</CheckoutLabel>
-        <CheckoutInput type="text" id="name" ref={nameInputRef} />
         {!formInputsValidity.name && <p>Please enter a valid name!</p>}
+        <CheckoutInput type="text" id="name" ref={nameInputRef} />
       </CheckoutControl>
       <CheckoutControl>
         <CheckoutLabel htmlFor="street">Street</CheckoutLabel>
-        <CheckoutInput type="text" id="street" ref={streetInputRef} />
         {!formInputsValidity.street && <p>Please enter a valid street!</p>}
+        <CheckoutInput type="text" id="street" ref={streetInputRef} />
       </CheckoutControl>
       <CheckoutControl>
         <CheckoutLabel htmlFor="city">City</CheckoutLabel>
-        <CheckoutInput type="text" id="city" ref={cityInputRef} />
         {!formInputsValidity.city && <p>Please enter a valid city!</p>}
+        <CheckoutInput type="text" id="city" ref={cityInputRef} />
       </CheckoutControl>
       <CheckoutControl>
         <CheckoutLabel htmlFor="country">Country</CheckoutLabel>
-        <CheckoutInput type="text" id="country" ref={countryInputRef} />
         {!formInputsValidity.country && <p>Please enter a valid country!</p>}
+        <CheckoutInput type="text" id="country" ref={countryInputRef} />
       </CheckoutControl>
       <CheckoutControl>
         <CheckoutLabel htmlFor="postal">Postal Code</CheckoutLabel>
-        <CheckoutInput type="text" id="postal" ref={postalInputRef} />
         {!formInputsValidity.postal && <p>Please enter a valid postal code!</p>}
+        <CheckoutInput type="text" id="postal" ref={postalInputRef} />
       </CheckoutControl>
       <CheckoutActions>
         <CheckoutBtn type="button" onClick={props.onCancel}>

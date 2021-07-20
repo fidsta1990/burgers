@@ -10,10 +10,10 @@ import {
 import Button from "../UI/Button";
 
 export const Wrapper = styled.form`
-  margin: 4rem auto;
+  margin: 2rem auto;
   height: auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 540px;
   ${setFlex({ x: "center", y: "center", d: "column" })};
   padding: 2.4rem;
   background: ${setColor.mainDark};

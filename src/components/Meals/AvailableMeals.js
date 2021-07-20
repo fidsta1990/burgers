@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { offerDetails } from "../../utils/offerDetails";
 import SingleMeal from "./SingleMeal";
 import styled from "styled-components";
 import { setColor, setFlex } from "../GlobalStyles/helper";
