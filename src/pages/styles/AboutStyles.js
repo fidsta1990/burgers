@@ -11,7 +11,7 @@ import design from "../../assets/design.png";
 
 export const Wrapper = styled.section`
   min-height: 90vh;
-  padding: 8.4rem 4rem;
+  padding: 4rem;
   ${setFlex({ x: "center", y: "center", d: "column" })};
 
   @media (max-width: ${sizes.s}) {
@@ -24,7 +24,8 @@ export const Wrapper = styled.section`
 
 export const Container = styled.section`
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
+  padding: 6.4rem 0rem;
   max-width: 1200px;
   margin: 0 auto;
   ${transition};
@@ -86,7 +87,7 @@ export const Content = styled.div`
 
 export const ContainerTwo = styled(Container)`
   min-height: 100vh;
-  padding: 8.4rem 0 3.2rem 0;
+  padding: 4rem 0rem;
 `;
 
 export const ContentTwo = styled(Content)`
@@ -126,7 +127,7 @@ export const AboutCard = styled(Card)`
 
 export const ContainerThree = styled(Container)`
   min-height: 80vh;
-  padding: 4.8rem 0;
+  padding: 4.8rem 0rem 0rem 0rem ;
   justify-content: center;
 
   h2 {
