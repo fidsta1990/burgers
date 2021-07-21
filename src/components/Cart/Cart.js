@@ -16,7 +16,7 @@ const Cart = (props) => {
   const { items, totalAmount, addItem, removeItem, clearCart } =
     useCartContext();
 
-  const totalValue = `$${totalAmount.toFixed(2)}`;
+  const totalValue = `£${totalAmount.toFixed(2)}`;
   const hasItems = items.length > 0;
 
   const cartItemRemoveHandler = (id) => {

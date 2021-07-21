@@ -9,7 +9,7 @@ import {
 } from "./CheckoutStyles";
 
 const isEmpty = (value) => value.trim() === "";
-const isFiveChars = (value) => value.trim().length === 5;
+const isFiveChars = (value) => value.length === 8 || value.length > 4;
 
 const Checkout = (props) => {
   const [formInputsValidity, setFormInputsValidity] = useState({

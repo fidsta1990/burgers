@@ -8,7 +8,7 @@ import {
   CartItemBtn,
 } from "./CartItemStyles";
 const CartItem = ({ id: mainID, price, name, amount, onRemove, onAdd }) => {
-  const priced = `$${price.toFixed(2)}`;
+  const priced = `£${price.toFixed(2)}`;
 
   return (
     <Item>
